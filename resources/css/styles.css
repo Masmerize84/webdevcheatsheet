@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    margin: 0;
+    padding-top: 85px;
+    padding-bottom: 85px;
+    background-color: #00d5ff;        
+}
+
+.header-color {
+    color: #01257D;
+    padding-left: 30px;
+}
+
+main p{
+    margin: 0 25px;
+    padding: 25px 15px;
+    background-color: blanchedalmond;
+    opacity: .7;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;    
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #01257D;
+    z-index: 5;
+    }
+
+p {
+    background-color: aquamarine;
+    max-width: 1000px;
+}
+
+.brand-title{
+    font-size: 1.5rem;
+    margin: .5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #00FFFF;        
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: white;
+}
+
+.navbar-links li a:hover {
+    color: #333;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1.2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #00FFFF;
+    border-radius: 10px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #01257D;
+  color: #00FFFF;
+  text-align: center;
+   
+}
+
+table {
+    border-spacing: 10px 5px;
+    margin-left: 15px;
+    min-width: 1000px;
+}
+
+th {
+    background-color: #01257D;
+    color: #00FFFF;
+}
+
+td {
+    padding: 0 15px;
+}
+
+tbody {
+    background-color: #e4f0f5;
+    padding: 0 15px;
+  }
+
+@media all and (max-width: 500px){
+    
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+
+
+}
